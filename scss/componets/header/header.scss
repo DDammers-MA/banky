@@ -1,4 +1,5 @@
 @use "../../abstracts/vars";
+@use "../../abstracts/animations";
 
 .header{
     background: white;
@@ -9,6 +10,7 @@
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
     margin: 0 auto;
+    @include animations.popupMixin;
     
 
     &__logo{

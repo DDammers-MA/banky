@@ -20,6 +20,16 @@ body {
   min-height: 100vh;
 }
 
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
 .header {
   background: white;
   height: 8rem;
@@ -29,6 +39,8 @@ body {
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   margin: 0 auto;
+  animation-name: popup;
+  animation-duration: 0.6s;
 }
 .header__logo {
   display: flex;
@@ -49,6 +61,8 @@ body {
 }
 .banky__section {
   display: flex;
+  animation-name: popup;
+  animation-duration: 0.6s;
 }
 .banky__section--left {
   flex-direction: column;
@@ -68,6 +82,9 @@ body {
 .banky__money {
   font-weight: 300;
   font-size: 250%;
+}
+.banky__money--blur {
+  filter: blur(2rem);
 }
 .banky__logo {
   border-radius: 50%;
@@ -104,6 +121,9 @@ body {
   height: 65%;
   overflow-y: scroll;
 }
+.banky__transactions--blur {
+  filter: blur(2rem);
+}
 .banky__transaction {
   display: flex;
   font-size: 120%;
@@ -111,6 +131,8 @@ body {
   justify-content: space-between;
   position: relative;
   padding-bottom: 0.5rem;
+  animation-name: popup;
+  animation-duration: 0.6s;
 }
 .banky__transaction::after {
   content: "";
